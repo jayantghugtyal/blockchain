@@ -1,1 +1,2 @@
-# blockchain
+#HOW TO DOWNLOAD IPFS
+STEP 1:
