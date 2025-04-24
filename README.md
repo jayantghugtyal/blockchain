@@ -23,6 +23,19 @@ Desktop: Open the app, it should show your peer ID and connected nodes.
 - Once the file was uploaded, IPFS generate a unique CID(content indentifier) for the file
 
 - ![image](https://github.com/user-attachments/assets/c65b12ba-f66f-49d1-bab6-d78204aa2789)
+  # ENCRYPTION AND PRIVACY ON IPFS
+  1 1.	echo "Hello, IPFS!" > myfile.txt
+2.	ipfs add myfile.txt
+3.	openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in myfile.txt -out myfile_encrypted.txt -pass pass:yourpassword
+4.	ipfs add myfile_encrypted.txt
+5.	cat myfile_encrypted.txt
+6.	openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -in myfile_encrypted.txt -out decrypted_file.txt -pass pass:yourpassword
+7.	cat decrypted_file.txt
+8.	ipfs add decrypted_file.txt
+  ![image](https://github.com/user-attachments/assets/4fe63599-43eb-4003-991b-113f0e6df694)
+
+![Screenshot 2025-04-25 045136](https://github.com/user-attachments/assets/8d7c9d98-2619-4fc0-b77b-c00fcba22351)
+
 
 - # METAMASK WALLET AND TRANSACTION
 - #Getting sepolia ETH from Faucet
